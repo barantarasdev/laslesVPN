@@ -1,0 +1,11 @@
+@use "../utils/mixins";
+
+.container {
+  max-width: 100rem;
+  padding: 0 1.25rem;
+  margin: 0 auto;
+
+  @include mixins.onDesktop {
+    padding: none;
+  }
+}

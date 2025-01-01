@@ -1,9 +1,0 @@
-{
-  "name": "laslesVPN",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "sass": "^1.83.0"
-  }
-}

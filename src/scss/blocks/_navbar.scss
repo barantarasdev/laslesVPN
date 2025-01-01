@@ -1,0 +1,30 @@
+@use "../variables";
+@use "../utils/mixins";
+
+.header__navbar {
+  display: none;
+
+  @include mixins.onDesktop {
+    display: block;
+  }
+
+  &__list {
+    @include mixins.onDesktop {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    color: rgba(variables.$header-list-color, 0.5);
+    transition: color ease variables.$primary-duration;
+    text-decoration: none;
+
+    &:hover,
+    &--active {
+      color: variables.$header-list-color;
+    }
+  }
+}
