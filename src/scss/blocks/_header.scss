@@ -1,0 +1,18 @@
+@use "../utils/mixins";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+
+  &__logo {
+    display: block;
+  }
+
+  &__burger {
+    @include mixins.onDesktop {
+      display: none;
+    }
+  }
+}
